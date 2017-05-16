@@ -1,11 +1,11 @@
 {
   "name": "group-by-prototype",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Group an Array of objects by key or with a function.",
   "main": "./dist/index.js",
   "scripts": {
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
-    "prepublishOnly": "npm run build",
+    "prepublish": "npm run build",
     "test": "make test"
   },
   "repository": {
