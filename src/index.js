@@ -1,10 +1,14 @@
 "use strict";
 
-const groupBy = function() {
-	var key = arguments[0];
-	var keyed = typeof key !== "function";
+const groupBy = function(key) {
+	if (null == key) {
+		// return original array if no key is given.
+		return this;
+	}
+	// is this a key or a key function?
+	let iskey = typeof key !== "function";
 	return this.reduce((partial, current, index) => {
-		var currentKey = keyed ? current[key] : key(current, index);
+		let currentKey = iskey ? current[key] : key(current, index);
 		if (!partial.hasOwnProperty(currentKey)) {
 			partial[currentKey] = [];
 		}

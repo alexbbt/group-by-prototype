@@ -1,6 +1,6 @@
 {
   "name": "group-by-prototype",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Group an Array of objects by key or with a function.",
   "main": "./dist/index.js",
   "scripts": {
@@ -15,7 +15,10 @@
   "keywords": [
     "group",
     "by",
-    "grouby"
+    "prototype",
+    "groupby",
+    "sql",
+    "groupbyprotoype"
   ],
   "author": "Alexander Bell-Towne <code@bell-towne.com> (https://github.com/alexbbt)",
   "license": "MIT",
