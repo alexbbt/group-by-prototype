@@ -1,6 +1,6 @@
 {
   "name": "group-by-prototype",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Group an Array of objects by key or with a function.",
   "main": "./dist/index.js",
   "scripts": {
